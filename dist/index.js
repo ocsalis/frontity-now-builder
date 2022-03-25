@@ -89,7 +89,7 @@ async function build({ files, entrypoint, workPath, config, meta = {}, }) {
             routes.unshift({ src: `${prefix}/ads.txt`, dest: "ads.txt" });
         const launcherFiles = {
             "now__bridge.js": new build_utils_1.FileFsRef({
-                fsPath: require("@now/node-bridge"),
+                fsPath: require("@vercel/node-bridge"),
             }),
             "now__launcher.js": new build_utils_1.FileFsRef({
                 fsPath: path_1.default.join(__dirname, "launcher.js"),
