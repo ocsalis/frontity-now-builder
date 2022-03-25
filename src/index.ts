@@ -7,13 +7,11 @@ import {
   runPackageJsonScript,
   getNodeVersion,
   getSpawnOptions,
-  createLambda,
-  Route,
   BuildOptions,
   Config,
   FileFsRef,
   Lambda,
-} from "@now/build-utils";
+} from "@vercel/build-utils";
 
 interface PackageJson {
   scripts?: {
@@ -113,7 +111,7 @@ export async function build({
 
     const prefix = mountpoint === "." ? "" : `/${mountpoint}`;
 
-    const routes: Route[] = [
+    const routes = [
       {
         src: `${prefix}/static/(.*)`,
         headers: { "cache-control": "public,max-age=31536000,immutable" },
@@ -174,8 +172,8 @@ export async function build({
       }),
     };
 
-    const lambda = await createLambda({
-      runtime: "nodejs12.x",
+    const lambda = new Lambda({
+      runtime: "nodejs14.x",
       handler: "now__launcher.launcher",
       files: {
         ...launcherFiles,

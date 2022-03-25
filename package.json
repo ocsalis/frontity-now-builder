@@ -1,24 +1,26 @@
 {
-  "name": "@frontity/now",
-  "version": "1.2.0",
-  "description": "A Frontity builder for the Now hosting (Zeit)",
+  "name": "vercel-builder",
+  "version": "1.2.1",
+  "description": "A Frontity custom builder fork from @frontity/now for Vercel.",
   "repository": {
     "type": "git",
-    "url": "https://github.com/frontity/now-builder.git"
+    "url": "https://github.com/Miracutor/now-builder.git"
   },
   "main": "./dist/index.js",
   "keywords": [
     "frontity",
-    "now",
+    "vercel",
     "builder"
   ],
-  "author": "Luis Herranz",
+  "author": "Miracutor",
   "license": "Apache-2.0",
   "bugs": {
-    "url": "https://github.com/frontity/now-builder/issues"
+    "url": "https://github.com/Miracutor/now-builder/issues"
   },
-  "homepage": "https://github.com/frontity/now-builder#readme",
-  "files": ["dist"],
+  "homepage": "https://github.com/Miracutor/now-builder#readme",
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "dev": "tsc --watch",
     "build": "tsc",
@@ -26,21 +28,23 @@
     "prepublishOnly": "tsc"
   },
   "peerDependencies": {
-    "@now/build-utils": "^0.9.4"
+    "@vercel/build-utils": "^2.15.0"
   },
   "dependencies": {
-    "@now/node-bridge": "^1.2.3"
+    "@vercel/frameworks": "^0.7.0",
+    "@vercel/node-bridge": "^2.2.0",
+    "@vercel/routing-utils": "^1.13.0"
   },
   "devDependencies": {
-    "@changesets/changelog-github": "^0.2.6",
-    "@changesets/cli": "^2.7.2",
-    "@now/build-utils": "^0.9.4",
-    "@types/glob": "^7.1.1",
-    "@typescript-eslint/eslint-plugin": "^1.13.0",
-    "@typescript-eslint/parser": "^1.13.0",
-    "eslint": "^6.1.0",
-    "eslint-plugin-import": "^2.18.2",
-    "eslint-plugin-jest": "^22.14.0",
-    "typescript": "3.5.2"
+    "@changesets/changelog-github": "^0.4.3",
+    "@changesets/cli": "^2.21.1",
+    "@types/glob": "^7.2.0",
+    "@typescript-eslint/eslint-plugin": "^5.16.0",
+    "@typescript-eslint/parser": "^5.16.0",
+    "@vercel/build-utils": "^2.15.0",
+    "eslint": "^8.11.0",
+    "eslint-plugin-import": "^2.25.4",
+    "eslint-plugin-jest": "^22.21.0",
+    "typescript": "^4.6.3"
   }
 }
