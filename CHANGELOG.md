@@ -1,5 +1,11 @@
 # @frontity/now
 
+## 1.2.2
+
+### Patch Changes
+
+- Update dependencies to the latest version.
+
 ## 1.2.0
 
 ### Minor Changes

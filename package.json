@@ -1,6 +1,6 @@
 {
   "name": "vercel-builder",
-  "version": "1.2.1",
+  "version": "1.2.2",
   "description": "A Frontity custom builder fork from @frontity/now for Vercel.",
   "repository": {
     "type": "git",
@@ -25,26 +25,27 @@
     "dev": "tsc --watch",
     "build": "tsc",
     "test": "tsc && jest",
-    "prepublishOnly": "tsc"
+    "prepublishOnly": "tsc",
+    "prepare": "tsc"
   },
   "peerDependencies": {
-    "@vercel/build-utils": "^2.15.0"
+    "@vercel/build-utils": "^2.17.0"
   },
   "dependencies": {
-    "@vercel/frameworks": "^0.7.0",
-    "@vercel/node-bridge": "^2.2.0",
-    "@vercel/routing-utils": "^1.13.0"
+    "@vercel/frameworks": "^0.9.1",
+    "@vercel/node-bridge": "^2.2.2",
+    "@vercel/routing-utils": "^1.13.5"
   },
   "devDependencies": {
-    "@changesets/changelog-github": "^0.4.3",
-    "@changesets/cli": "^2.21.1",
+    "@changesets/changelog-github": "^0.4.5",
+    "@changesets/cli": "^2.23.1",
     "@types/glob": "^7.2.0",
-    "@typescript-eslint/eslint-plugin": "^5.16.0",
-    "@typescript-eslint/parser": "^5.16.0",
-    "@vercel/build-utils": "^2.15.0",
-    "eslint": "^8.11.0",
-    "eslint-plugin-import": "^2.25.4",
+    "@typescript-eslint/eslint-plugin": "^5.30.5",
+    "@typescript-eslint/parser": "^5.30.5",
+    "@vercel/build-utils": "^2.17.0",
+    "eslint": "^8.19.0",
+    "eslint-plugin-import": "^2.26.0",
     "eslint-plugin-jest": "^22.21.0",
-    "typescript": "^4.6.3"
+    "typescript": "^4.7.4"
   }
 }
