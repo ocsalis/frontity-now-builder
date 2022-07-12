@@ -6,7 +6,7 @@ if (!process.env.NODE_ENV) {
 }
 
 const { Server } = require("http");
-const { Bridge } = require("./now__bridge");
+const { Bridge } = require("./vercel__bridge");
 const frontity = require("./index").default;
 
 const server = new Server(frontity);
