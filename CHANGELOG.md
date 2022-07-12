@@ -1,5 +1,12 @@
 # @frontity/now
 
+## 1.2.3
+
+### Patch Changes
+
+- Add yarn.lock from yarn import
+- Try changing now**bridge to vercel**bridge
+
 ## 1.2.2
 
 ### Patch Changes
