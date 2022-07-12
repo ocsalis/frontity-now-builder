@@ -26,7 +26,7 @@
     "build": "tsc",
     "test": "tsc && jest",
     "prepublishOnly": "tsc",
-    "prepare": "tsc"
+    "prepack": "tsc"
   },
   "peerDependencies": {
     "@vercel/build-utils": "^2.17.0"
