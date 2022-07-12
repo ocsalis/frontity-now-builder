@@ -5,7 +5,7 @@ if (!process.env.NODE_ENV) {
         process.env.NOW_REGION === "dev1" ? "development" : "production";
 }
 const { Server } = require("http");
-const { Bridge } = require("./vercel__bridge");
+const { Bridge } = require("./now__bridge");
 const frontity = require("./index").default;
 const server = new Server(frontity);
 const bridge = new Bridge(server);
