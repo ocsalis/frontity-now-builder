@@ -1,5 +1,15 @@
 # @frontity/now
 
+## 1.3.0
+
+### Minor Changes
+
+- Default to nodejs 16 runtime
+
+### Patch Changes
+
+- Revert back changes in launcher.ts
+
 ## 1.2.3
 
 ### Patch Changes

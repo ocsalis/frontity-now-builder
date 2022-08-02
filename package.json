@@ -1,6 +1,6 @@
 {
   "name": "vercel-builder",
-  "version": "1.2.3",
+  "version": "1.3.0",
   "description": "A Frontity custom builder fork from @frontity/now for Vercel.",
   "repository": {
     "type": "git",

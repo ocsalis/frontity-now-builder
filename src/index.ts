@@ -173,7 +173,7 @@ export async function build({
     };
 
     const lambda = new Lambda({
-      runtime: "nodejs14.x",
+      runtime: "nodejs16.x",
       handler: "now__launcher.launcher",
       files: {
         ...launcherFiles,
