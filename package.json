@@ -33,12 +33,12 @@
     "prepublishOnly": "tsc"
   },
   "peerDependencies": {
-    "@vercel/build-utils": "^5.0.1"
+    "@vercel/build-utils": "^10.5.1"
   },
   "dependencies": {
-    "@vercel/frameworks": "^0.9.1",
-    "@vercel/node-bridge": "^2.2.2",
-    "@vercel/routing-utils": "^1.13.5"
+    "@vercel/frameworks": "^3.6.3",
+    "@vercel/node-bridge": "^4.0.1",
+    "@vercel/routing-utils": "^5.0.4"
   },
   "devDependencies": {
     "@changesets/changelog-github": "^0.4.7",
@@ -46,7 +46,7 @@
     "@types/glob": "^7.2.0",
     "@typescript-eslint/eslint-plugin": "^5.43.0",
     "@typescript-eslint/parser": "^5.43.0",
-    "@vercel/build-utils": "5.5.8",
+    "@vercel/build-utils": "10.5.1",
     "eslint": "^8.27.0",
     "eslint-plugin-import": "^2.26.0",
     "eslint-plugin-jest": "^22.21.0",
