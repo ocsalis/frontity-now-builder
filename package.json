@@ -7,7 +7,9 @@
     "url": "https://github.com/Miracutor/now-builder.git"
   },
   "engines": {
-    "node": "22.x"
+    "node": "22.x",
+    "npm": ">=11.0.0",
+    "yarn": ">=1.22.22"
   },
   "main": "./dist/index.js",
   "keywords": [
