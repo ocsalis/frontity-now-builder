@@ -6,6 +6,9 @@
     "type": "git",
     "url": "https://github.com/Miracutor/now-builder.git"
   },
+  "engines": {
+    "node": "22.x"
+  },
   "main": "./dist/index.js",
   "keywords": [
     "frontity",
