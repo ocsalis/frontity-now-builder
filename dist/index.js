@@ -96,7 +96,7 @@ async function build({ files, entrypoint, workPath, config, meta = {}, }) {
             }),
         };
         const lambda = new build_utils_1.Lambda({
-            runtime: "nodejs18.x",
+            runtime: "nodejs22.x",
             handler: "now__launcher.launcher",
             files: {
                 ...launcherFiles,
